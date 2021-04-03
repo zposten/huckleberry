@@ -1,12 +1,87 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 /* Add styles here! */
+
+:root {
+    --green: hsl(160deg, 100%, 30%);
+    --gold-light: hsl(45deg, 100%, 50%);
+    --gold-dark: hsl(45deg, 100%, 40%);
+    --black: hsl(0deg, 0%, 0%);
+    --white: hsl(0deg, 0%, 100%);
+    --gray-very-dark: hsl(0deg, 0%, 10%);
+    --gray-dark: hsl(0deg, 0%, 30%);
+    --gray-medium: hsl(0deg, 0%, 40%);
+    --gray-light: hsl(0deg, 0%, 60%);
+
+    --font-small: 1rem;
+    --font-medium: 1.25rem;
+    --font-large: 1.5rem;
+    --font-xlarge: 2rem;
+}
+
+.max-width-wrapper {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 4rem 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header p {
+    margin: 2rem 0;
+}
+
+header strong {
+    color: var(--green);
+}
+
+main {
+    background: var(--gray-light);
+    border-top: 0.5rem solid var(--gray-dark);
+    border-bottom: 1px solid transparent;
+    height: auto;
+}
+
+main p {
+    margin: 1rem 0;
+}
+
+h1 {
+    margin: 3rem 0;
+}
+
+.intro-chunk {
+    max-width: 450px;
+    font-size: var(--font-large);
+    padding: 1.5rem;
+}
+
+.card {
+    margin: 4rem 0;
+    background: white;
+    padding: 1.5rem;
+    border-bottom: 6px solid var(--gray-dark);
+}
+
+.indented-heading {
+    background: var(--gold-light);
+    padding: 1rem 2rem;
+    margin-top: -1rem;
+    margin-left: -2.5rem;
+    width: fit-content;
+    border-bottom: 6px solid var(--gold-dark);
+}
